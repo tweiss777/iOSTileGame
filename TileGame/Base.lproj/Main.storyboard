@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,299 +21,247 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Moves Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vap-4T-7Iu">
-                                <rect key="frame" x="20" y="28" width="84.5" height="21"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="Sna-Bh-PbU">
+                                <rect key="frame" x="10" y="125.5" width="355" height="531.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PvO-EO-bjC">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="62.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQz-aZ-4k4">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="62.5"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BoM-hS-TfB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IO-zZ-qpO">
+                                                <rect key="frame" x="94" y="0.0" width="73.5" height="62.5"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u4m-4J-ocI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bN-ye-vKG">
+                                                <rect key="frame" x="187.5" y="0.0" width="74" height="62.5"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nOg-9C-TA1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nD6-EG-Nig">
+                                                <rect key="frame" x="281.5" y="0.0" width="73.5" height="62.5"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sGQ-qK-1hm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="apa-M6-FMj">
+                                        <rect key="frame" x="0.0" y="117.5" width="355" height="62"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoD-IK-3RA">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="62"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lH3-Z6-q5z"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfl-Jt-hNA">
+                                                <rect key="frame" x="94" y="0.0" width="73.5" height="62"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uCV-gb-yIK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpx-XN-ttH">
+                                                <rect key="frame" x="187.5" y="0.0" width="74" height="62"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vNI-SD-PSD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0r-JE-nKh">
+                                                <rect key="frame" x="281.5" y="0.0" width="73.5" height="62"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwW-OZ-mVc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VtU-13-e8e">
+                                        <rect key="frame" x="0.0" y="234.5" width="355" height="62.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7T-We-K5I">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="62.5"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xHs-ML-Mgk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6va-mX-zoi">
+                                                <rect key="frame" x="94" y="0.0" width="73.5" height="62.5"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXm-rO-YCM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaP-II-4BR">
+                                                <rect key="frame" x="187.5" y="0.0" width="74" height="62.5"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9rV-QH-Bwy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSB-wg-d9U">
+                                                <rect key="frame" x="281.5" y="0.0" width="73.5" height="62.5"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ouO-Pe-NYe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JwT-I5-Lg2">
+                                        <rect key="frame" x="0.0" y="352" width="355" height="62"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJz-6m-0QG">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="62"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LP1-Br-VVd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCJ-fD-148">
+                                                <rect key="frame" x="94" y="0.0" width="73.5" height="62"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0aO-MY-MNe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJZ-XM-nak">
+                                                <rect key="frame" x="187.5" y="0.0" width="74" height="62"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gwc-Lg-j0n"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9i-Yy-D0D">
+                                                <rect key="frame" x="281.5" y="0.0" width="73.5" height="62"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IKQ-me-VhZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="H22-xZ-wBH">
+                                        <rect key="frame" x="0.0" y="469" width="355" height="62.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KX-g3-DTl">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="62.5"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QUx-bk-UVX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFM-oX-ARq">
+                                                <rect key="frame" x="94" y="0.0" width="73.5" height="62.5"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tIh-dg-k87"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxn-SD-sdy">
+                                                <rect key="frame" x="187.5" y="0.0" width="74" height="62.5"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4zl-bP-5fg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCq-tj-HMG">
+                                                <rect key="frame" x="281.5" y="0.0" width="73.5" height="62.5"/>
+                                                <state key="normal" backgroundImage="HiddenTile"/>
+                                                <connections>
+                                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P8P-Yx-fNN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jK5-A3-3Wc" userLabel="InfoContainer">
+                                <rect key="frame" x="10" y="30" width="355" height="85.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fd-jK-qxb">
+                                        <rect key="frame" x="10" y="48" width="335" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="WAy-Tq-CnR">
+                                        <rect key="frame" x="8" y="8" width="339" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moves Left:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vap-4T-7Iu">
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxP-3c-4JR">
+                                                <rect key="frame" x="113" y="0.0" width="10.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXp-D9-qkt">
+                                                <rect key="frame" x="147.5" y="0.0" width="39" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.020100812986998839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Reset">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="InGameReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="naq-9e-qHY"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moves Used" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWh-kP-Qdu">
+                                                <rect key="frame" x="210.5" y="0.0" width="95" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv2-ss-3nh">
+                                                <rect key="frame" x="329.5" y="0.0" width="9.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="vQl-2z-xAY"/>
+                                    <constraint firstItem="7fd-jK-qxb" firstAttribute="leading" secondItem="jK5-A3-3Wc" secondAttribute="leading" constant="10" id="4ut-qG-Lrx"/>
+                                    <constraint firstAttribute="trailing" secondItem="7fd-jK-qxb" secondAttribute="trailing" constant="10" id="5h9-pb-XDK"/>
+                                    <constraint firstItem="WAy-Tq-CnR" firstAttribute="top" secondItem="jK5-A3-3Wc" secondAttribute="top" constant="8" id="5i3-UQ-8kH"/>
+                                    <constraint firstAttribute="bottom" secondItem="7fd-jK-qxb" secondAttribute="bottom" constant="10" id="Awt-rL-QL8"/>
+                                    <constraint firstAttribute="trailing" secondItem="WAy-Tq-CnR" secondAttribute="trailing" constant="8" id="OrH-7K-PST"/>
+                                    <constraint firstItem="7fd-jK-qxb" firstAttribute="top" secondItem="WAy-Tq-CnR" secondAttribute="bottom" constant="10" id="Z93-7W-x7r"/>
+                                    <constraint firstItem="WAy-Tq-CnR" firstAttribute="leading" secondItem="jK5-A3-3Wc" secondAttribute="leading" constant="8" id="u7b-i6-xJs"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxP-3c-4JR">
-                                <rect key="frame" x="111.5" y="28" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Moves Used" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWh-kP-Qdu">
-                                <rect key="frame" x="421" y="28" width="95" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fd-jK-qxb">
-                                <rect key="frame" x="20" y="67" width="560" height="28"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="O0Y-JM-jqE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv2-ss-3nh">
-                                <rect key="frame" x="538" y="28" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQz-aZ-4k4">
-                                <rect key="frame" x="28" y="103" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BoM-hS-TfB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IO-zZ-qpO">
-                                <rect key="frame" x="166" y="103" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u4m-4J-ocI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bN-ye-vKG">
-                                <rect key="frame" x="304" y="103" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nOg-9C-TA1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nD6-EG-Nig">
-                                <rect key="frame" x="442" y="103" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sGQ-qK-1hm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoD-IK-3RA">
-                                <rect key="frame" x="28" y="202.5" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lH3-Z6-q5z"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfl-Jt-hNA">
-                                <rect key="frame" x="166" y="202.5" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uCV-gb-yIK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpx-XN-ttH">
-                                <rect key="frame" x="304" y="202.5" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vNI-SD-PSD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0r-JE-nKh">
-                                <rect key="frame" x="442" y="202.5" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwW-OZ-mVc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7T-We-K5I">
-                                <rect key="frame" x="28" y="302" width="130" height="91"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xHs-ML-Mgk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6va-mX-zoi">
-                                <rect key="frame" x="166" y="302" width="130" height="91"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXm-rO-YCM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaP-II-4BR">
-                                <rect key="frame" x="304" y="302" width="130" height="91"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9rV-QH-Bwy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSB-wg-d9U">
-                                <rect key="frame" x="442" y="302" width="130" height="91"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ouO-Pe-NYe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJz-6m-0QG">
-                                <rect key="frame" x="28" y="401" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LP1-Br-VVd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="13" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCJ-fD-148">
-                                <rect key="frame" x="166" y="401" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0aO-MY-MNe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="14" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJZ-XM-nak">
-                                <rect key="frame" x="304" y="401" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gwc-Lg-j0n"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="15" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9i-Yy-D0D">
-                                <rect key="frame" x="442" y="401" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IKQ-me-VhZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="17" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFM-oX-ARq">
-                                <rect key="frame" x="166" y="500.5" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tIh-dg-k87"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="18" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxn-SD-sdy">
-                                <rect key="frame" x="304" y="500.5" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4zl-bP-5fg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="19" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCq-tj-HMG">
-                                <rect key="frame" x="442" y="500.5" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P8P-Yx-fNN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="16" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KX-g3-DTl">
-                                <rect key="frame" x="28" y="500" width="130" height="91.5"/>
-                                <state key="normal" backgroundImage="HiddenTile"/>
-                                <connections>
-                                    <action selector="RevealHiddenTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QUx-bk-UVX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXp-D9-qkt">
-                                <rect key="frame" x="166" y="28" width="247" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.020100812986998839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="InGameReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="naq-9e-qHY"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7IO-zZ-qpO" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="03O-LL-KN5"/>
-                            <constraint firstItem="Zv2-ss-3nh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="2ZW-Dj-Ld8"/>
-                            <constraint firstItem="i0r-JE-nKh" firstAttribute="top" secondItem="nD6-EG-Nig" secondAttribute="bottom" constant="8" id="3Jr-bm-Sif"/>
-                            <constraint firstItem="wxP-3c-4JR" firstAttribute="baseline" secondItem="Zv2-ss-3nh" secondAttribute="baseline" id="3xr-ZE-l8i"/>
-                            <constraint firstItem="7IO-zZ-qpO" firstAttribute="top" secondItem="7fd-jK-qxb" secondAttribute="bottom" constant="8" id="4Hu-VT-R8Q"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oFM-oX-ARq" secondAttribute="bottom" constant="8" id="4x7-Yi-xcn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bCq-tj-HMG" secondAttribute="trailing" constant="8" id="562-S7-lVJ"/>
-                            <constraint firstItem="6va-mX-zoi" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="5Dr-Ad-Eev"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="7fd-jK-qxb" secondAttribute="leading" id="5yQ-LV-zyU"/>
-                            <constraint firstItem="K9i-Yy-D0D" firstAttribute="leading" secondItem="IJZ-XM-nak" secondAttribute="trailing" constant="8" id="6YX-Fx-6OI"/>
-                            <constraint firstItem="iCJ-fD-148" firstAttribute="leading" secondItem="XJz-6m-0QG" secondAttribute="trailing" constant="8" id="6sj-CC-0eV"/>
-                            <constraint firstItem="uaP-II-4BR" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="7v4-au-K8I"/>
-                            <constraint firstItem="PSB-wg-d9U" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="884-wd-02w"/>
-                            <constraint firstItem="Zpx-XN-ttH" firstAttribute="leading" secondItem="Qfl-Jt-hNA" secondAttribute="trailing" constant="8" id="9fL-as-nmJ"/>
-                            <constraint firstItem="Kxn-SD-sdy" firstAttribute="leading" secondItem="oFM-oX-ARq" secondAttribute="trailing" constant="8" id="9pM-wc-zI7"/>
-                            <constraint firstItem="Qfl-Jt-hNA" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="AO7-fT-LHL"/>
-                            <constraint firstItem="wxP-3c-4JR" firstAttribute="baseline" secondItem="bWh-kP-Qdu" secondAttribute="baseline" id="AZF-hX-Vvh"/>
-                            <constraint firstItem="dQz-aZ-4k4" firstAttribute="top" secondItem="7fd-jK-qxb" secondAttribute="bottom" constant="8" id="BF5-Uz-eSi"/>
-                            <constraint firstItem="wxP-3c-4JR" firstAttribute="baseline" secondItem="Vap-4T-7Iu" secondAttribute="baseline" id="Bbi-Dh-Kbf"/>
-                            <constraint firstItem="i0r-JE-nKh" firstAttribute="leading" secondItem="Zpx-XN-ttH" secondAttribute="trailing" constant="8" id="CBC-W7-88y"/>
-                            <constraint firstItem="ZoD-IK-3RA" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="Cix-Im-umg"/>
-                            <constraint firstItem="Qfl-Jt-hNA" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="Cuh-jR-5h0"/>
-                            <constraint firstItem="0KX-g3-DTl" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="DEn-w0-oc2"/>
-                            <constraint firstItem="XJz-6m-0QG" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="E04-W9-Tf8"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0KX-g3-DTl" secondAttribute="bottom" constant="8" id="EqY-8D-qfl"/>
-                            <constraint firstItem="Zpx-XN-ttH" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="Evq-p9-w6e"/>
-                            <constraint firstItem="6bN-ye-vKG" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="F96-le-pjn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="K9i-Yy-D0D" secondAttribute="trailing" constant="8" id="GpF-8U-nqo"/>
-                            <constraint firstItem="Kxn-SD-sdy" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="H65-1I-yUO"/>
-                            <constraint firstItem="x7T-We-K5I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="KAP-Zd-AtS"/>
-                            <constraint firstItem="iCJ-fD-148" firstAttribute="top" secondItem="6va-mX-zoi" secondAttribute="bottom" constant="8" id="KCK-gu-g61"/>
-                            <constraint firstItem="K9i-Yy-D0D" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="KzP-4f-EZs"/>
-                            <constraint firstItem="7IO-zZ-qpO" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="L2N-mh-PfU"/>
-                            <constraint firstItem="bCq-tj-HMG" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="Lc5-af-cGs"/>
-                            <constraint firstItem="ZoD-IK-3RA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Lgz-iN-bmh"/>
-                            <constraint firstItem="Qfl-Jt-hNA" firstAttribute="leading" secondItem="ZoD-IK-3RA" secondAttribute="trailing" constant="8" id="NyJ-KA-Y5D"/>
-                            <constraint firstItem="x7T-We-K5I" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="OR9-Y4-fof"/>
-                            <constraint firstItem="dQz-aZ-4k4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="P7x-Xz-ktP"/>
-                            <constraint firstItem="6va-mX-zoi" firstAttribute="top" secondItem="Qfl-Jt-hNA" secondAttribute="bottom" constant="8" id="Pmo-ej-Hpf"/>
-                            <constraint firstItem="XJz-6m-0QG" firstAttribute="top" secondItem="x7T-We-K5I" secondAttribute="bottom" constant="8" id="QBZ-I0-vjC"/>
-                            <constraint firstItem="uaP-II-4BR" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="RQc-u7-Gi8"/>
-                            <constraint firstItem="7fd-jK-qxb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="TN5-px-Uk6"/>
-                            <constraint firstItem="ZoD-IK-3RA" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="TwY-FA-Gr9"/>
-                            <constraint firstItem="Vap-4T-7Iu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="U5m-1R-T38"/>
-                            <constraint firstItem="6bN-ye-vKG" firstAttribute="top" secondItem="7fd-jK-qxb" secondAttribute="bottom" constant="8" id="UG0-pa-Yhg"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bCq-tj-HMG" secondAttribute="bottom" constant="8" id="WUr-RT-7ww"/>
-                            <constraint firstItem="nD6-EG-Nig" firstAttribute="leading" secondItem="6bN-ye-vKG" secondAttribute="trailing" constant="8" id="WVk-Zb-3TU"/>
-                            <constraint firstItem="XJz-6m-0QG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="XjY-wP-yKN"/>
-                            <constraint firstItem="oFM-oX-ARq" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="YQo-MV-GgO"/>
-                            <constraint firstItem="IJZ-XM-nak" firstAttribute="leading" secondItem="iCJ-fD-148" secondAttribute="trailing" constant="8" id="Zd2-9Q-K1V"/>
-                            <constraint firstItem="x7T-We-K5I" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="Zim-E7-DE2"/>
-                            <constraint firstItem="6va-mX-zoi" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="aAu-CH-sgc"/>
-                            <constraint firstItem="bCq-tj-HMG" firstAttribute="top" secondItem="K9i-Yy-D0D" secondAttribute="bottom" constant="8" id="acS-Nt-AYf"/>
-                            <constraint firstItem="nD6-EG-Nig" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="alj-kR-pH0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Zv2-ss-3nh" secondAttribute="trailing" id="auk-zY-JjE"/>
-                            <constraint firstItem="nD6-EG-Nig" firstAttribute="top" secondItem="7fd-jK-qxb" secondAttribute="bottom" constant="8" id="bU2-J1-nRv"/>
-                            <constraint firstItem="bWh-kP-Qdu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="cWH-6E-DZ1"/>
-                            <constraint firstItem="uaP-II-4BR" firstAttribute="top" secondItem="Zpx-XN-ttH" secondAttribute="bottom" constant="8" id="cag-rf-3sK"/>
-                            <constraint firstItem="oFM-oX-ARq" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="cvZ-UZ-IHe"/>
-                            <constraint firstItem="bWh-kP-Qdu" firstAttribute="leading" secondItem="cXp-D9-qkt" secondAttribute="trailing" constant="8" id="e3D-E2-09l"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nD6-EG-Nig" secondAttribute="trailing" constant="8" id="e3d-8W-1Li"/>
-                            <constraint firstItem="0KX-g3-DTl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="eNe-YF-IvF"/>
-                            <constraint firstItem="XJz-6m-0QG" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="eO7-3K-IUA"/>
-                            <constraint firstItem="Qfl-Jt-hNA" firstAttribute="top" secondItem="7IO-zZ-qpO" secondAttribute="bottom" constant="8" id="eQH-gz-joB"/>
-                            <constraint firstItem="oFM-oX-ARq" firstAttribute="leading" secondItem="0KX-g3-DTl" secondAttribute="trailing" constant="8" id="eZk-Yy-b8s"/>
-                            <constraint firstItem="cXp-D9-qkt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="f15-be-jCa"/>
-                            <constraint firstItem="oFM-oX-ARq" firstAttribute="top" secondItem="iCJ-fD-148" secondAttribute="bottom" constant="8" id="g0a-gy-adU"/>
-                            <constraint firstItem="Kxn-SD-sdy" firstAttribute="top" secondItem="IJZ-XM-nak" secondAttribute="bottom" constant="8" id="g6z-Ti-2Td"/>
-                            <constraint firstItem="6bN-ye-vKG" firstAttribute="leading" secondItem="7IO-zZ-qpO" secondAttribute="trailing" constant="8" id="gGs-rc-gRt"/>
-                            <constraint firstItem="Zpx-XN-ttH" firstAttribute="top" secondItem="6bN-ye-vKG" secondAttribute="bottom" constant="8" id="gL9-2e-Mes"/>
-                            <constraint firstItem="Kxn-SD-sdy" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="gy2-hX-8IP"/>
-                            <constraint firstItem="6bN-ye-vKG" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="h4x-sh-ZWj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="i0r-JE-nKh" secondAttribute="trailing" constant="8" id="hgQ-sz-mve"/>
-                            <constraint firstItem="cXp-D9-qkt" firstAttribute="leading" secondItem="wxP-3c-4JR" secondAttribute="trailing" constant="12.5" id="iBv-MO-4uZ"/>
-                            <constraint firstItem="wxP-3c-4JR" firstAttribute="leading" secondItem="Vap-4T-7Iu" secondAttribute="trailing" constant="7" id="jnb-ea-eNE"/>
-                            <constraint firstItem="7IO-zZ-qpO" firstAttribute="leading" secondItem="dQz-aZ-4k4" secondAttribute="trailing" constant="8" id="jsR-bU-826"/>
-                            <constraint firstItem="bCq-tj-HMG" firstAttribute="leading" secondItem="Kxn-SD-sdy" secondAttribute="trailing" constant="8" id="jtb-EX-BgB"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Vap-4T-7Iu" secondAttribute="leading" id="kzf-O9-mAi"/>
-                            <constraint firstItem="i0r-JE-nKh" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="l3t-Fo-SYb"/>
-                            <constraint firstItem="i0r-JE-nKh" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="lto-fY-V6A"/>
-                            <constraint firstItem="0KX-g3-DTl" firstAttribute="top" secondItem="XJz-6m-0QG" secondAttribute="bottom" constant="8" id="mdy-wl-Lic"/>
-                            <constraint firstItem="x7T-We-K5I" firstAttribute="top" secondItem="ZoD-IK-3RA" secondAttribute="bottom" constant="8" id="msm-zq-eNX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7fd-jK-qxb" secondAttribute="trailing" id="nIp-p9-GFP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PSB-wg-d9U" secondAttribute="trailing" constant="8" id="osG-jH-ky4"/>
-                            <constraint firstItem="K9i-Yy-D0D" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="pId-pi-tNS"/>
-                            <constraint firstItem="iCJ-fD-148" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="pgz-AS-dQE"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kxn-SD-sdy" secondAttribute="bottom" constant="8" id="qSg-UI-xgw"/>
-                            <constraint firstItem="nD6-EG-Nig" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="rIw-O0-Fgn"/>
-                            <constraint firstItem="PSB-wg-d9U" firstAttribute="top" secondItem="i0r-JE-nKh" secondAttribute="bottom" constant="8" id="rNU-nC-Bgs"/>
-                            <constraint firstItem="IJZ-XM-nak" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="sad-3L-x5l"/>
-                            <constraint firstItem="ZoD-IK-3RA" firstAttribute="top" secondItem="dQz-aZ-4k4" secondAttribute="bottom" constant="8" id="tul-wa-Xhm"/>
-                            <constraint firstItem="wxP-3c-4JR" firstAttribute="firstBaseline" secondItem="Vap-4T-7Iu" secondAttribute="firstBaseline" id="uDY-cy-4l6"/>
-                            <constraint firstItem="bCq-tj-HMG" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="vEb-38-Esh"/>
-                            <constraint firstItem="K9i-Yy-D0D" firstAttribute="top" secondItem="PSB-wg-d9U" secondAttribute="bottom" constant="8" id="vrm-Cf-LoP"/>
-                            <constraint firstItem="6va-mX-zoi" firstAttribute="leading" secondItem="x7T-We-K5I" secondAttribute="trailing" constant="8" id="wDQ-64-Kky"/>
-                            <constraint firstItem="0KX-g3-DTl" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="wNZ-6g-GG8"/>
-                            <constraint firstItem="Zpx-XN-ttH" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="win-Ox-9ur"/>
-                            <constraint firstItem="Zv2-ss-3nh" firstAttribute="leading" secondItem="bWh-kP-Qdu" secondAttribute="trailing" constant="22" id="xtc-d2-gMS"/>
-                            <constraint firstItem="IJZ-XM-nak" firstAttribute="top" secondItem="uaP-II-4BR" secondAttribute="bottom" constant="8" id="yCw-zg-HXJ"/>
-                            <constraint firstItem="PSB-wg-d9U" firstAttribute="leading" secondItem="uaP-II-4BR" secondAttribute="trailing" constant="8" id="yO0-s2-hWL"/>
-                            <constraint firstItem="IJZ-XM-nak" firstAttribute="height" secondItem="dQz-aZ-4k4" secondAttribute="height" id="yxX-Mm-1eN"/>
-                            <constraint firstItem="iCJ-fD-148" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="zG6-LN-o04"/>
-                            <constraint firstItem="PSB-wg-d9U" firstAttribute="width" secondItem="dQz-aZ-4k4" secondAttribute="width" id="zT6-cq-W6x"/>
-                            <constraint firstItem="uaP-II-4BR" firstAttribute="leading" secondItem="6va-mX-zoi" secondAttribute="trailing" constant="8" id="zqe-J4-o2U"/>
+                            <constraint firstItem="Sna-Bh-PbU" firstAttribute="top" secondItem="jK5-A3-3Wc" secondAttribute="bottom" constant="10" id="0nE-0o-3o5"/>
+                            <constraint firstItem="jK5-A3-3Wc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="4Aq-nz-9bM"/>
+                            <constraint firstItem="Sna-Bh-PbU" firstAttribute="top" secondItem="jK5-A3-3Wc" secondAttribute="bottom" constant="10" id="68j-dk-VdN"/>
+                            <constraint firstItem="jK5-A3-3Wc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="88q-hi-5WU"/>
+                            <constraint firstItem="Sna-Bh-PbU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="CO8-e2-mUg"/>
+                            <constraint firstAttribute="trailing" secondItem="jK5-A3-3Wc" secondAttribute="trailing" constant="10" id="H6Z-MS-Uy4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sna-Bh-PbU" secondAttribute="bottom" constant="10" id="Mdt-Wn-Z3l"/>
+                            <constraint firstAttribute="trailing" secondItem="Sna-Bh-PbU" secondAttribute="trailing" constant="10" id="QZZ-Pl-O9S"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sna-Bh-PbU" secondAttribute="bottom" constant="10" id="eho-oS-U8a"/>
                         </constraints>
                     </view>
                     <connections>
@@ -326,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="126" y="288"/>
+            <point key="canvasLocation" x="125.59999999999999" y="287.40629685157421"/>
         </scene>
     </scenes>
     <resources>
